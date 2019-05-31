@@ -49,9 +49,10 @@ public class App {
 					}  
 					break;
 				case 5: 
-					for (Entry<Integer, Date> e : DurationCalculator.calculate().entrySet()) {
+					int i = 1;
+					for (Date d : DurationCalculator.calculate()) {
 						DateFormat f = new SimpleDateFormat("HH:mm:ss");
-						System.out.println(e.getKey() + " - " + f.format(e.getValue()));
+						System.out.println(i++ + " - " + f.format(d));
 					}
 					break;
 				case 6: 
